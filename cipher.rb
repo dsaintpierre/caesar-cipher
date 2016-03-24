@@ -26,8 +26,8 @@ option_parser.parse!
 
 ARGV.each do |string|
   unless options[:decrypt]
-    Caesar.new(options[:shift].to_i).encode(string)
+    puts Caesar.new(options[:shift].to_i).encode(string)
   else
-    Caesar.new(options[:shift].to_i).decode(string)
+    puts Caesar.new(options[:shift].to_i).decode(string)
   end
 end

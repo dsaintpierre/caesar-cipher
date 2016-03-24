@@ -8,13 +8,11 @@ class Caesar
     string = string.split("").map do |char|
       @alphanum.include?(char) ? @cipher[@alphanum.index(char)] : char
     end.join
-    puts string
   end
 
   def decode(string)
     string = string.split("").map do |char|
       @alphanum.include?(char) ? @alphanum[@cipher.index(char)] : char
     end.join
-    puts string
   end
 end
