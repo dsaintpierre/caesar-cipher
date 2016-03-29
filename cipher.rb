@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 require_relative 'lib/caesarcipher'
-require 'byebug'
 require 'optparse'
 
 options = {}

@@ -25,4 +25,8 @@ describe Caesar do
   it "should not downcase on decode" do
     expect(Caesar.new(5).decode("Ktt GFw Gf4")).to eq "Foo BAr BaZ"
   end
+
+  it "should accept numbers greater than 62" do
+    expect(Caesar.new(100).encode("foo bar baz")).to eq "R00 NM3 NMb"
+  end
 end
