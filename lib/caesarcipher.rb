@@ -1,6 +1,7 @@
 class Caesar
-  def initialize(shift)
+  def initialize(num)
     @alphanum = [*"a".."z", *"A".."Z", *"0".."9"]
+    shift = num % @alphanum.length
     @cipher = (@alphanum[shift .. -1] + @alphanum[0 .. shift - 1])
   end
 
